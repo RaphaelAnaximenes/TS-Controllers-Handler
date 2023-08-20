@@ -7,12 +7,7 @@ function generateHomePageData(): { message: string; currentDate: string; endpoin
     { route: '/', controller: 'controllers.homeController' },
     { route: '/api', controller: 'controllers.apiController' },
     { route: '/menu', controller: 'controllers.menuController' },
-<<<<<<< HEAD
-    ];
-=======
-   
-  ];
->>>>>>> abaac835978a95bdf1eb858397453f2d1d286889
+];
 
   return {
     message: 'TS server + Console endpoint debugger',
