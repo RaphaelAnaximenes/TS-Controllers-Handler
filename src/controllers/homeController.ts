@@ -1,13 +1,13 @@
 import { Request, Response } from 'express';
 import path from 'path';
-import pug from 'pug'; // Import Pug
+import pug from 'pug'; 
 
 function generateHomePageData(): { message: string; currentDate: string; endpoints: any[] } {
   const endpointList = [
     { route: '/', controller: 'controllers.homeController' },
     { route: '/api', controller: 'controllers.apiController' },
     { route: '/menu', controller: 'controllers.menuController' },
-    // Add more endpoints here if needed
+   
   ];
 
   return {
