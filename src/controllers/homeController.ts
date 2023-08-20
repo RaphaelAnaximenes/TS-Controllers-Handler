@@ -7,8 +7,7 @@ function generateHomePageData(): { message: string; currentDate: string; endpoin
     { route: '/', controller: 'controllers.homeController' },
     { route: '/api', controller: 'controllers.apiController' },
     { route: '/menu', controller: 'controllers.menuController' },
-    // Add more endpoints here if needed
-  ];
+    ];
 
   return {
     message: 'TS server + Console endpoint debugger',
@@ -19,6 +18,6 @@ function generateHomePageData(): { message: string; currentDate: string; endpoin
 
 export function homeController(req: Request, res: Response) {
   const data = generateHomePageData();
-  const html = pug.renderFile(path.join(__dirname, '../views/home.pug'), data); // Render the Pug template
-  res.send(html); // Send the rendered HTML to the client
+  const html = pug.renderFile(path.join(__dirname, '../views/home.pug'), data); 
+  res.send(html); 
 }
